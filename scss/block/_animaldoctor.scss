@@ -1,0 +1,140 @@
+.animaldoctor-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  background: #ffffff;
+  border-radius: 0px 5px 5px 5px;
+  padding: 0px 95px 43px 35px;
+  margin-left: -55px;
+}
+.animaldoctor-content--box__title {
+  @include sub-title;
+  font-size: 36px;
+  line-height: 20px;
+}
+.animaldoctor-content--box__text {
+  @include text-stil-400;
+  width: 492px;
+  height: 60px;
+  margin-top: 18px;
+}
+.animaldoctor-content--box__text1 {
+  @include text-stil-400;
+  width: 492px;
+  height: 60px;
+  margin-top: 9px;
+}
+.content-box--btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+}
+
+.content-box--btn__link {
+  position: relative;
+  padding: 15px 36px 16px 35px;
+  @include link-btn;
+  color: #ffffff;
+  background: #ffbd54;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 34px;
+  margin-left: -45px;
+  transition: all 2s ease;
+}
+.content-box--btn__link:hover{
+  background: #333333;
+  transition: all 2s ease;
+}
+.content-box--btn__link::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/btn-img-001.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  left: 17px;
+}
+.content-box--btn__link1 {
+  position: relative;
+  @include link-btn;
+  padding: 15px 40px 14px 45px;
+  color: #ffffff;
+  background: #333333;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 34px;
+  transition: all 2s ease;
+}
+.content-box--btn__link1:hover{
+  background: #ffbd54;
+  transition: all 2s ease;
+}
+.content-box--btn__link1::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/btn-bg-002.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  left: 15px;
+}
+.animaldoctor-content--box__img {
+  border-radius: 5px;
+}
+@media only screen and (max-width: 824px) {
+  .animaldoctor-content--box1__img {
+    display: block;
+    width: 535px;
+    height: 300px;
+  }
+  .animaldoctor-content {
+    flex-direction: column;
+    padding: 5px 80px 43px 130px;
+  }
+  .animaldoctor-content--box {
+    margin-left: -35px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .animaldoctor-content--box1__img {
+    width: 350px;
+    height: 200px;
+  }
+  .animaldoctor-content {
+    flex-direction: column;
+  }
+  .animaldoctor-content--box__title {
+    @include sub-title;
+    font-size: 24px;
+    line-height: 15px;
+  }
+  .animaldoctor-content--box {
+    margin-left: -0px;
+  }
+  .animaldoctor-content--box__text {
+    @include text-stil-400;
+    width: 350px;
+    height: 60px;
+    margin-top: 18px;
+  }
+  .animaldoctor-content--box__text1 {
+    @include text-stil-400;
+    width: 350px;
+    height: 60px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .content-box--btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .content-box--btn__link {
+    margin-left: -175px;
+  }
+  .content-box--btn__link1 {
+    margin-left: -155px;
+  }
+}

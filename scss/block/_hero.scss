@@ -1,0 +1,110 @@
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // background: #e5e5e5;
+}
+.hero-content--box__title {
+  @include sub-title;
+  width: 608px;
+  height: 128px;
+}
+.hero-content--box__text {
+  @include text-stil-400;
+  margin-left: 5px;
+  margin-top: 29px;
+}
+.hero-content--box__link {
+  @include link-btn;
+  margin-left: 5px;
+  margin-top: 38px;
+  display: inline-block;
+  transition: all 2s ease;
+}
+.hero-content--box__b {
+  color: #78c0de;
+}
+.hero-content--box__img {
+  margin-top: 421px;
+  margin-left: -10px;
+}
+.hero-content--box__link:hover{
+background-color: #ffbd54;
+transition: all 2s ease;
+}
+@media only screen and (max-width: 824px) {
+  .hero-content--box__img1 {
+    width: 290px;
+    height: 600px;
+    margin-top: -100px;
+  }
+  .hero-content {
+    margin-top: -150px;
+  }
+  .hero-content--box__title {
+    @include sub-title;
+    width: 450px;
+    font-size: 45px;
+    line-height: 64px;
+    height: 128px;
+  }
+  .hero-content--box__text {
+    @include text-stil-400;
+    font-size: 13px;
+    line-height: 18px;
+    width: 380px;
+    height: 90px;
+    margin-top: 20px;
+  }
+  .hero-content--box__img {
+    width: 120px;
+    height: 400px;
+    margin-left: -120px;
+  } 
+  .hero-content--box__link {
+    @include link-btn;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 12px 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero-content {
+    flex-direction: column;
+  }
+  .hero-content {
+    margin-top: 0px;
+  }
+  .hero-content--box__img1 {
+    width: 300px;
+    height: 500px;
+    margin-left: -75px;
+  }
+  .hero-content--box__title {
+    @include sub-title;
+    width: 350px;
+    height: 128px;
+    font-size: 42px;
+    line-height: 54px;
+    margin-left: 5px;
+  }
+  .hero-content--box__text {
+    @include text-stil-400;
+    font-size: 13px;
+    line-height: 18px;
+    width: 326px;
+    height: 90px;
+    margin-top: 10px;
+  }
+  .hero-content--box__link {
+    @include link-btn;
+    margin-top: 70px;
+    padding: 12px 40px;
+  }
+  .hero-content--box__img {
+    width: 150px;
+    height: 400px;
+    margin-top: -70px;
+    margin-left: 225px;
+  }
+}

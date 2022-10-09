@@ -1,0 +1,131 @@
+.site-inputcarta__container {
+  margin-top: 200px;
+}
+.inputcarta-content {
+  background: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputcarta-content--box__title {
+  @include sub-title;
+  font-size: 48px;
+  line-height: 62px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.inputcarta-content--box__text {
+  width: 334px;
+  height: 40px;
+  @include text-stil-400;
+  margin-bottom: 29px;
+}
+.inputcarta-content--box__input {
+  padding: 16px 188px 13px 22px;
+  @include text-stil-400;
+  border: none;
+  margin-top: 29px;
+  margin-bottom: 14px;
+}
+.inputcarta-content--box__input1 {
+  padding: 16px 188px 13px 22px;
+  @include text-stil-400;
+  border: none;
+  margin-bottom: 14px;
+}
+.input-box-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputcarta-content--box__input2 {
+  padding: 17px 200px 86px 22px;
+  border: none;
+  margin-bottom: 30px;
+}
+.inputcarta-content--box__link {
+  @include link-btn;
+  background: #ffbd54;
+  color: #ffffff;
+  padding: 15px 40px;
+  display: inline-block;
+  margin-left:-185px;
+  transition: all 2s ease;
+}
+.inputcarta-content--box__link:hover{
+  background-color: #333333;
+  transition: all 2s ease;
+}
+.inputcarta-content--box__carta{
+    width: 462px;
+    height: 655px;
+  }
+@media only screen and (max-width: 824px) {
+  .inputcarta-content {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .inputcarta-content--box__carta {
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  .inputcarta-content--box1 {
+    margin-left: -100px;
+  }
+  .input-box-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+  .inputcarta-content--box__title {
+    @include sub-title;
+    font-size: 70px;
+    margin-left: 100px;
+    line-height: 62px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 100px;
+  }
+  .inputcarta-content--box__text {
+    width: 500px;
+    height: 40px;
+    @include text-stil-400;
+    text-align: center;
+    margin-left: 110px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .inputcarta-content--box__carta {
+    width: 350px;
+    height: 400px;
+  }
+  .inputcarta-content--box__title {
+    @include sub-title;
+    font-size: 45px;
+    color: #ffffff;
+  }
+  .inputcarta-content--box__text {
+    width: 314px;
+    height: 40px;
+    @include text-stil-400;
+    text-align: center;
+    margin-left: 120px;
+  }
+  .inputcarta-content--box__input {
+    padding: 16px 130px 13px 22px;
+  }
+  .inputcarta-content--box__input1 {
+    padding: 16px 130px 13px 22px;
+  }
+  .inputcarta-content--box__input2 {
+    padding: 20px 140px 50px 22px;
+  }
+  .inputcarta-content--box2__img{
+    width: 350px;
+    height: 350px;
+  }
+  .inputcarta-content--box__link{
+    margin-left: 25px;
+  }
+}
