@@ -1,0 +1,95 @@
+.site-inputdog__container {
+  background-image: url("../../img/bg-dogs.svg");
+  background-repeat: no-repeat;
+  padding: 90px 60px 88px 287px;
+}
+.inputdog-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.inputdog-box1__img {
+  margin-top: -40px;
+}
+.inputdog-box__title {
+  @include sub-title;
+  font-size: 48px;
+  line-height: 20px;
+  margin-bottom: 35px;
+  color: #ffffff;
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 21px;
+  margin-left: -100px;
+}
+.input-box__input {
+  @include text-stil-400;
+  padding: 18px 147px 12px 22px;
+  border: none;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.input-box__link {
+  @include text-stil-500;
+  color: #ffffff;
+  background: #333333;
+  border-radius: 3px;
+  padding: 15px 53px 14px 51px;
+  margin-left: -160px;
+  transition: all 2s ease;
+}
+.input-box__link:hover {
+  background-color: burlywood;
+  transition: all 2s ease;
+}
+@media only screen and (max-width: 824px) {
+  .site-inputdog__container {
+    padding: 50px 0 40px 0;
+  }
+  .inputdog-box1__img {
+    width: 450px;
+    height: 450px;
+    margin-top: 45px;
+    margin-left: -50px;
+  }
+  .input-box {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 100px;
+  }
+  .input-box__input {
+    padding: 18px 140px 12px 22px;
+  }
+  .inputdog-box__title {
+    width: 400px;
+    height: 50px;
+    font-size: 40px;
+    margin-left: 150px;
+  }
+  .input-box__link {
+    margin-left: -148px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .inputdog-content {
+    flex-direction: column;
+  }
+  .site-inputdog__container {
+    padding: 177px 0 600px 0;
+    margin-top: -260px;
+  }
+  .input-box__input {
+    margin-top: -20px;
+    margin-left: -100px;
+  }
+  .inputdog-box__title {
+    font-size: 37px;
+    margin-left: 50px;
+  }
+  .input-box__link {
+    margin-left: -100px;
+  }
+}
